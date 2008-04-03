@@ -1,0 +1,40 @@
+default:
+  start:
+    text:     'Start'
+    link:     'start/index'
+
+  users:
+    text:     'Users'
+    link:     'user/list'
+
+  calendars:
+    text:     'Calendars'
+    link:     'user/list'
+
+  groups:
+    text:     'Groups'
+    link:     'user/list'
+
+  zones:
+    text:     'Zones'
+    link:     'user/list'
+
+  blank:
+
+  guard:
+    text:  'Guard'
+    items:
+    
+      guard_user:
+        text:     'User'
+        link:     'sfGuardUser'
+        
+      guard_group:
+        text:     'Group'
+        link:     'sfGuardGroup'
+        
+      guard_permission:
+        text:     'Permission'
+        link:     'sfGuardPermission'
+
+   

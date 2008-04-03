@@ -1,0 +1,63 @@
+= sfJQueryTabs plugin =
+== Overview ==
+
+Plugin to generate a dynamic tab panel based in jQuery tabs (http://stilbuero.de/jquery/tabs_3/).
+Tabs loads contents using iframes.
+The tab panel can contain unlimited levels.
+
+== Screenshot ==
+
+[[Image(screenshot.jpg)]]
+
+== Installation ==
+Install plugin:
+
+{{{
+$ php symfony plugin-install http://plugins.symfony-project.com/sfJQueryTabs
+}}}
+
+== Configuration ==
+
+  * Enable the plugin `sfJQueryTabs` module on an application/environment base, via the `enabled_modules` setting of the `settings.yml` file.
+    
+  For instance, to enable the module for the `frontend` application in the `dev` environment, open the `<my_project>/apps/frontend/config/settings.yml` and add under the `all` key:
+    
+{{{
+all:
+  .settings:
+    enabled_modules: [default, sfJQueryTabs]
+}}}
+
+  * Clear the cache
+
+{{{
+$ symfony cc
+}}}
+
+  * Configure tabs
+  
+  Copy the file '''jquerytabs.yml''' located in: <my_project>/plugins/sfJQueryTabs/config/examples/ to <my_project>/apps/frontend/config/
+  Open copied file and modify configuration to your wishes.
+  
+  * Link/copy css and javascript 
+  
+  Copy or link (if your operation system supports it) <my_project>/plugins/sfJQueryTabsPlugin-x.y.z/web/* to <my_project>/web/sfJQueryTabsPlugin/
+
+== How to call/use plugin? ==
+If single you need a tabPanel you can call it thus:
+
+{{{
+http://<my_project>/<myapp>/sfJQueryTabs
+}}}
+
+== Contact ==
+ * Jordi Llonch ( jordi [at] laigu [dot] net ), [http://www.laigu.net]
+
+== TODO ==
+ * I18N
+ * Integration with sfGuard
+
+== Changelog ==
+
+=== 2008-04-02 | 0.0.1 Alpha ===
+ * First public release.
