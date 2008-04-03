@@ -13,7 +13,7 @@ The tab panel can contain unlimited levels.
 Install plugin:
 
 {{{
-$ php symfony plugin-install http://plugins.symfony-project.com/sfJQueryTabs
+$ php symfony plugin-install http://plugins.symfony-project.com/sfJQueryTabsPlugin
 }}}
 
 == Configuration ==
@@ -41,7 +41,7 @@ $ symfony cc
   
   * Link/copy css and javascript 
   
-  Copy or link (if your operation system supports it) <my_project>/plugins/sfJQueryTabsPlugin-x.y.z/web/* to <my_project>/web/sfJQueryTabsPlugin/
+  Copy or link (if your operation system supports it) <my_project>/plugins/sfJQueryTabsPlugin/web/* to <my_project>/web/sfJQueryTabsPlugin/
 
 == How to call/use plugin? ==
 If single you need a tabPanel you can call it thus:
